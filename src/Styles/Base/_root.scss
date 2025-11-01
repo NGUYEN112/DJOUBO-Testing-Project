@@ -1,0 +1,11 @@
+:root {
+    --color-bg-primary: #0c0909;
+    --font-primary: "Gilroy", sans-serif;
+    --text-primary-color: #ffffff;
+    --btn-bg-color: #a80606
+}
+
+$color-bg-primary: var(--color-bg-primary);
+$font-primary: var(--font-primary);
+$text-primary-color: var(--text-primary-color);
+$btn-bg-color: var(--btn-bg-color);

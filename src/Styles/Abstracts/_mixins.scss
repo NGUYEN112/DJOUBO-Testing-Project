@@ -1,0 +1,18 @@
+@mixin breakpoints(
+  $cssProp: "padding",
+  $cssPropUnit: "px",
+  $values: (),
+  $mediaQueryType: "max-width"
+) {
+  @each $screen, $breakpoint in $values {
+    @media (max-width: #{$screen}px) {
+      #{$cssProp}: #{$breakpoint + $cssPropUnit};
+    }
+  }
+}
+
+@mixin flexCenter($justify:center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}

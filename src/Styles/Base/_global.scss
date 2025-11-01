@@ -1,0 +1,32 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/root" as *;
+html {
+    @include breakpoints(
+        "font-size",
+        "",
+        (
+            1920: 10px,
+            768: 1.302vw,
+        )
+  );
+    font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    background-color: $color-bg-primary;
+    padding: 0 8rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
