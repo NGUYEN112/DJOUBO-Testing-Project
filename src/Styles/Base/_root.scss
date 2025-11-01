@@ -4,6 +4,8 @@
     --color-dark-charcoal: #2C2C2C;
     --color-dim-gray: #696969;
     --color-light-gray: #b3b3b3;
+    --color-medium-light-gray: #A0A0A0
+    --color-medium-gray: #5d5d5d;
 
     --btn-bg-color: #a80606;
 
@@ -16,6 +18,9 @@ $color-bg-primary: var(--color-bg-primary);
 $color-bg-secondary: var(--color-bg-secondary);
 $color-charcoal: var(--color-dark-charcoal);
 $color-dim-gray: var(--color-dim-gray);
+$color-light-gray: var(--color-light-gray);
+$color-medium-light-gray: var(--color-medium-light-gray);
+$color-medium-gray: var(--color-medium-gray);
 
 $btn-bg-color: var(--btn-bg-color);
 

@@ -3,7 +3,6 @@
 @use "@/Styles/abstracts/variables" as *;
 
 .btn {
-    font-family: $font-primary;
     color: $text-primary-color;
     @include flexCenter(center);
     border: none;

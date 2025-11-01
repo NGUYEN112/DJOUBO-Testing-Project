@@ -1,7 +1,8 @@
 @use "./abstracts/variables";
 @use "./abstracts/mixins";
+@use "./Base/root" as *;
 
-.section {
+.section#ss1 {
     h1 {
         background: linear-gradient(180deg, $text-primary-color 0%, $color-light-gray 100%);
         -webkit-background-clip: text;

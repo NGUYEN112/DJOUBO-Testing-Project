@@ -24,7 +24,7 @@ export default function Header() {
                             </select>
                         </div>
                         
-                        <CommonButton text="Connexion" href="/login" className="primary font-16 lh-24 pad-y-16 pad-x-32 mg-l-32"/>
+                        <CommonButton text="Connexion" href="/login" className="primary pad-x-32 mg-l-32"/>
                     </nav>
                 </div>
             </div>

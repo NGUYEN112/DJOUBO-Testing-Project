@@ -1,5 +1,5 @@
 import { Navigate, useRoutes } from "react-router-dom";
-import HomePage from "../Pages/HomePage";
+import HomePage from "../Pages/HomePage/HomePage";
 import MainLayout from "../Layout/MainLayout";
 
 export default function AppRouter() {

@@ -19,16 +19,16 @@ export default function CompaniesDropdown() {
 
   return (
     <li ref={dropdownRef} className={`dropdown ${open ? "is-open" : ""}`}>
-      <button onClick={toggleDropdown} className="dropdown__btn font-16 lh-24">
+      <button onClick={toggleDropdown} className="dropdown__btn font-16 lh-24 font-fm-pr">
         Section entreprise
         <span className="dropdown__icon" />
       </button>
 
       {open && (
         <ul className="dropdown__list radius-8 min-w220 pad-y-8">
-            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/taxi">Société de taxi</a></li>
-            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/enterprise">Entreprise & Corporate</a></li>
-            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/partner">Devenir partenaire</a></li>
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24 font-fm-pr" href="/taxi">Société de taxi</a></li>
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24 font-fm-pr" href="/enterprise">Entreprise & Corporate</a></li>
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24 font-fm-pr" href="/partner">Devenir partenaire</a></li>
         </ul>
       )}
     </li>

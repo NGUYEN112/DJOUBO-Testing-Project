@@ -19,7 +19,7 @@ export default function CommonButton({
   return (
     <a
       type={type}
-      className={`btn ${className}`}
+      className={`btn font-16 lh-24 pad-y-16 font-fm-se ${className}`}
       onClick={onClick}
       href={href}
     >
