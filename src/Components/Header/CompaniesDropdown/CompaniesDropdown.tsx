@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import "./EnterpriseDropdown.scss";
+import "./CompaniesDropdown.scss";
 
-export default function EnterpriseDropdown() {
+export default function CompaniesDropdown() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
 
@@ -19,18 +19,16 @@ export default function EnterpriseDropdown() {
 
   return (
     <li ref={dropdownRef} className={`dropdown ${open ? "is-open" : ""}`}>
-      <button onClick={toggleDropdown} className="dropdown__btn">
+      <button onClick={toggleDropdown} className="dropdown__btn font-16 lh-24">
         Section entreprise
         <span className="dropdown__icon" />
       </button>
 
       {open && (
-        <ul className="dropdown__list">
-            <li><a href="#">Taxi</a></li>
-            <li><a href="#">Partner</a></li>
-            <li><a href="#">Choice</a></li>
-            <li><a href="#">Explanatory</a></li>
-            <li><a href="#">Driver List</a></li>
+        <ul className="dropdown__list radius-8 min-w220 pad-y-8">
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/taxi">Société de taxi</a></li>
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/enterprise">Entreprise & Corporate</a></li>
+            <li><a className="pad-y-1 pad-x-16 font-16 lh-24" href="/partner">Devenir partenaire</a></li>
         </ul>
       )}
     </li>

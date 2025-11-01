@@ -1,11 +1,23 @@
 :root {
     --color-bg-primary: #0c0909;
-    --font-primary: "Gilroy", sans-serif;
+    --color-bg-secondary: #141212;
+    --color-dark-charcoal: #2C2C2C;
+    --color-dim-gray: #696969;
+    --color-light-gray: #b3b3b3;
+
+    --btn-bg-color: #a80606;
+
     --text-primary-color: #ffffff;
-    --btn-bg-color: #a80606
+    --text-secondary-color: #696969;
+    
 }
 
 $color-bg-primary: var(--color-bg-primary);
-$font-primary: var(--font-primary);
-$text-primary-color: var(--text-primary-color);
+$color-bg-secondary: var(--color-bg-secondary);
+$color-charcoal: var(--color-dark-charcoal);
+$color-dim-gray: var(--color-dim-gray);
+
 $btn-bg-color: var(--btn-bg-color);
+
+$text-primary-color: var(--text-primary-color);
+$text-secondary-color: var(--text-secondary-color);

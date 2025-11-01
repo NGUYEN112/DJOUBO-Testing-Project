@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { Outlet } from "react-router-dom";
 
@@ -6,8 +7,9 @@ export default function MainLayout() {
     <>
       <Header />
       <main>
-        <Outlet /> {/* nơi hiển thị nội dung page */}
+        <Outlet />
       </main>
+      <Footer />
     </>
   );
 }

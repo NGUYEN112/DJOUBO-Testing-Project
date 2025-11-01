@@ -1,0 +1,52 @@
+@use "@/Styles/base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/abstracts/variables" as *;
+.footer {
+    margin-top: 50rem;
+    .ft1-container {
+        background-color: $color-bg-secondary;
+        @include flexCenter(center);
+        flex-direction: column;
+    }
+    .ft1r1 {
+        @include flexStart(space-between);
+        width: 100%;
+    }
+    .ft1r2 {
+        border-top: solid 1px $color-charcoal;
+        width: 100%;
+        p {
+            color: $color-dim-gray;
+        }
+    }
+    &__logo {
+        p {
+            color: $text-secondary-color;
+        }
+    }
+    &__about {
+        li:nth-child(1) {
+            color: $text-primary-color;
+        }
+        li a{
+            color: $text-primary-color;
+            font-family: $font-secondary;
+        }
+    }
+    &__appDownload {
+        h3 {
+            color: $text-primary-color;
+        }
+        & .downloadLinks {
+            @include flexCenter(flex-start);
+        }
+    }
+    &__socialMedia {
+        h3 {
+            color: $text-primary-color;
+        }
+        & .socialLinks {
+            @include flexCenter(flex-start);
+        }
+    }
+}

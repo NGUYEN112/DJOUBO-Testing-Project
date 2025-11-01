@@ -1,5 +1,6 @@
-@use "@/Styles/Abstracts/mixins" as *;
-@use "@/Styles/Base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/base/root" as *;
+@use "@/Styles/abstracts/variables" as *;
 
 .header {
     position: fixed;
@@ -9,10 +10,6 @@
     width: 100%;
     .hd1r1 {
         @include flexCenter(space-between);
-        padding: 3.3rem 8rem;
-    }
-    &__logo {
-        width: 25.1rem;
     }
     &__nav {
         @include flexCenter(flex-end);
@@ -20,8 +17,6 @@
     &__menu {
         background-color: transparent;
         border: none;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
         color: $text-primary-color;
         & option {
             background-color: transparent;
@@ -30,21 +25,14 @@
     }
     &__language {
         @include flexCenter(center);
-        padding: 0 .2rem;
-        margin-left: 3rem;
     }
     &__languageSelect {
         background-color: transparent;
         border: none;
         color: $text-primary-color;
-        margin-left: .2rem;
         & option {
             background-color: $color-bg-primary;
             color: $text-primary-color;
         }
-    }
-    & button.btn {
-        padding: 1.6rem 3.2rem;
-        margin-left: 3.2rem;
     }
 }

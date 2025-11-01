@@ -3,25 +3,28 @@ import { IMAGES } from "../../../Constants/images";
 
 interface CommonButtonProps {
   text: string;
-  variant?: "primary" | "secondary"; 
+  className?: string; 
+  href?:string
   onClick?: () => void;
   type?: "button" | "submit";
 }
 
 export default function CommonButton({
   text,
-  variant = "primary",
+  className = "",
   onClick,
+  href = "javascript:void(0);",
   type = "button",
 }: CommonButtonProps) {
   return (
-    <button
+    <a
       type={type}
-      className={`btn btn--${variant}`}
+      className={`btn ${className}`}
       onClick={onClick}
+      href={href}
     >
       {text}
-      <img src={IMAGES.ArrowRightLight} alt="icon arrow" />
-    </button>
+      <img src={IMAGES.ArrowRightLight} alt="icon arrow" className="mg-l-8"/>
+    </a>
   );
 }

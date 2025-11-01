@@ -1,0 +1,85 @@
+/* ============================================
+   LAYOUT SYSTEM
+   ============================================ */
+
+/* Display Properties */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inblock { display: inline-block; }
+.d-flex { display: flex; }
+.d-inline-flex { display: inline-flex; }
+
+/* Positioning */
+.p-relative { position: relative; }
+.p-absolut { position: absolute; }
+
+.p-absolut-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: perspective(1px) translateY(-50%);
+	-moz-transform: perspective(1px) translateY(-50%);
+	-ms-transform: perspective(1px) translateY(-50%);
+	-o-transform: perspective(1px) translateY(-50%);
+	transform: perspective(1px) translateY(-50%);
+}
+
+/* Flexbox Utilities */
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-ver-base { align-items: baseline; }
+.flex-ver-top { align-items: flex-start; }
+.flex-ver-center { align-items: center; }
+
+.flex-hor-start { justify-content: flex-start; }
+.flex-hor-center { justify-content: center; }
+.flex-hor-end { justify-content: flex-end; }
+.flex-hor-between { justify-content: space-between; }
+
+.flex-top { align-items: flex-start; }
+.flex-rreverse { flex-direction: row-reverse; }
+.flex-direction-row { flex-direction: row; }
+.flex-direction-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+.flex-self-base { align-self: baseline; }
+.flex-self-stretch { align-self: stretch; }
+.flex-grow { flex-grow: 1; }
+
+/* Width Utilities */
+.w-100 { width: 100%; }
+.w-90 { width: 90%; }
+.w-80 { width: 80%; }
+.w-70 { width: 70%; }
+.w-60 { width: 60%; }
+.w-50 { width: 50%; }
+.w-40 { width: 40%; }
+.w-30 { width: 30%; }
+.w-20 { width: 20%; }
+.w-10 { width: 10%; }
+.w-fit { width: fit-content; }
+.w-max { width: max-content; }
+
+/* Height Utilities */
+.h-100 { height: 100%; }
+.vh-100 { height: 100vh; }
+.vw-100 { width: 100vw; }
+
+/* Image Utilities */
+.img-fit {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.img-fit-cover {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

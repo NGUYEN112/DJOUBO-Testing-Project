@@ -1,19 +1,17 @@
-@use "@/Styles/Base/root" as *;
+@use "@/Styles/base/root" as *;
 .dropdown {
   position: relative;
   &__btn {
     display: inline-flex;
     align-items: center;
-    gap: .8rem;
+    gap: .5rem;
     background: transparent;
     border: none;
     color: $text-primary-color;
-    font: inherit;
-    cursor: pointer;
-
+    
     .dropdown__icon {
-      width: .5rem;
-      height: .5rem;
+      width: 5px;
+      height: 5px;
       border-right: .1rem solid currentColor;
       border-bottom: .1rem solid currentColor;
       transform: rotate(45deg);
@@ -27,19 +25,15 @@
 
   &__list {
     position: absolute;
-    top: calc(100% + .8rem);
+    top: calc(100% + .5rem);
     left: 0;
     background: $color-bg-primary;
-    border-radius: .8rem;
-    min-width: 22rem;
-    padding: .8rem 0;
     list-style: none;
-    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
 
     li a {
       display: block;
-      padding: 1rem 1.6rem;
       color: $text-primary-color;
       text-decoration: none;
       transition: background 0.25s;

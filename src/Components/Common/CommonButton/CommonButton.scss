@@ -1,21 +1,15 @@
-@use "@/Styles/Base/root" as *;
-@use "@/Styles/Abstracts/mixins" as *;
+@use "@/Styles/base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/abstracts/variables" as *;
 
 .btn {
     font-family: $font-primary;
     color: $text-primary-color;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
     @include flexCenter(center);
     border: none;
     border-radius: 10rem;
-    padding: 1.6rem 0;
-    img {
-        margin-left: 0.8rem;
-    }
-    
 }
 
-.btn--primary {
+.primary {
     background-color: $btn-bg-color;
 }

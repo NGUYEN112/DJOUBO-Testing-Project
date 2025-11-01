@@ -1,10 +1,19 @@
-@use "Abstracts/fonts";
-@use "Abstracts/variables";
-@use "Abstracts/mixins";
+@use "abstracts/fonts";
+@use "abstracts/variables";
+@use "abstracts/mixins";
 
-@use "Base/reset";
-@use "Base/root";
-@use "Base/global";
+@use "base/root";
+@use "base/global";
+@use "base/typography";
+@use "base/layout";
 
-@use "Pages/home";
+@use 'utilities/spacing';
+@use 'utilities/sizing';
+@use 'utilities/utilities';
+// @use 'utilities/transforms';
+
+@use "pages/home";
+
+@use "general";
+
 
