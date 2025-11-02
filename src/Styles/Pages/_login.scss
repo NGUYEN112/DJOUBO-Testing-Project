@@ -1,0 +1,45 @@
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/base/root" as *;
+.login {
+    .login-container {
+        @include flexCenter(space-between);
+    }
+    &__formInfo {
+        .form__group {
+            width: 31rem;
+        }
+        .form__group .input-group .mg-r-12 img{
+            height: 24px;
+        }
+        .forgot-password {
+            color: $btn-bg-color;
+            text-decoration: underline;
+            display: inline-block;
+            float: right;
+        }
+        .form-checkbox {
+            @include flexCenter(flex-start)
+        }
+        .form-checkbox label{
+            color: $text-primary-color;
+        }
+        .form-checkbox input[type="checkbox"] {
+            background-color: transparent;
+            appearance: none;
+            border: solid 1px $text-primary-color;
+            accent-color: white;
+            width: 1rem;
+            height: 1rem;
+        }
+        .form-checkbox input[type="checkbox"]:checked {
+            background-color: red;
+        }
+        .go-to-register {
+            text-align: center;
+        }
+        .go-to-register a {
+            color: $text-primary-color;
+            text-decoration: underline;
+        }
+    }
+}

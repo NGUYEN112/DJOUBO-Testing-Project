@@ -6,11 +6,13 @@ import PassengerInfoForm from "./Component/FormComponent/PassengerInfoForm";
 import InfoExplanComponent from "./Component/InfoExplanComponent/InfoExplanComponent";
 import FeatureComponent from "./Component/FeatureComponent/FeatureComponent";
 import CommonQuestionForm from "../../Components/Common/CommonQuestionForm";
+import { usePopup } from "../../Context/PopupContext";
 
 export default function HomePage() {
     const [journeyStep, setJourneyStep] = useState(1);
     const [questionFormStatus,setQuestionFormStatus] = useState(false)
     const [tempDataTimeAndAddress, setTempDataTimeAndAddress] = useState<FormDataDateAndAddressType | null>(null);
+    const { openPopup } = usePopup();
     useEffect(() => {
         const cache = sessionStorage.getItem("temp-data-address-time");
         if (cache) setTempDataTimeAndAddress(JSON.parse(cache));
@@ -25,7 +27,7 @@ export default function HomePage() {
     };
 
     const handleSendQuestionForm = (status: boolean) => {
-        alert("Your message has been received")
+        openPopup("Your message has been received")
     }
 
     return (

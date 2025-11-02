@@ -6,7 +6,7 @@ interface CommonInputProps {
     name: string
     groupClassName?: string;
     inputClassName?: string;
-    inputType: "text" | "number" | "email" | "textarea" | "date" | "time";
+    inputType: "text" | "number" | "email" | "textarea" | "date" | "time" | "password";
     iconImg?: ImageKey;
     label?: string;
     placeholder?: string;

@@ -1,10 +1,12 @@
 import { useEffect, useRef } from "react";
 import CommonButton from "../Common/CommonButton";
 import CompaniesDropdown from "./CompaniesDropdown";
+import { useAuth } from "../../Context/AuthContext";
 import { IMAGES } from "../../Constants/images";
 import "./Header.scss";
 export default function Header() {
     const headerRef = useRef<HTMLElement | null>(null);
+    const { user, isLoggedIn } = useAuth()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,7 +44,7 @@ export default function Header() {
                             </select>
                         </div>
                         
-                        <CommonButton text="Connexion" href="/login" type="button" className="primary pad-x-32 mg-l-32"/>
+                        <CommonButton text={!isLoggedIn ? "Connexion" : "Driver List"} href={!isLoggedIn ? "/login" : "/driver-list"} type="button" className="primary pad-x-32 mg-l-32"/>
                     </nav>
                 </div>
             </div>

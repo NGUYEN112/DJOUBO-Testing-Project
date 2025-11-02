@@ -19,9 +19,11 @@ import FlightIcon from "@/assets/icons/flight.svg";
 import CarIcon from "@/assets/icons/car.svg";
 import CalendarRoundIcon from "@/assets/icons/calendar-round.svg";
 import UserIcon from "@/assets/icons/user.svg";
+import User02Icon from "@/assets/icons/user-02.svg";
 import MailIcon from "@/assets/icons/email.svg";
 import PhoneIcon from "@/assets/icons/phone.svg";
 import ChatIcon from "@/assets/icons/chat.svg";
+import LockIcon from "@/assets/icons/lock.svg";
 
 
 import IPMockup from "@/assets/images/ip-mockup.svg";
@@ -33,6 +35,7 @@ import FeatureImg02 from "@/assets/images/feature-02.svg";
 import FeatureImg03 from "@/assets/images/feature-03.svg";
 import DLetterImg from "@/assets/images/d-letter.svg";
 import PhoneWithBg from "@/assets/images/phone-with-bg.svg";
+import LoginImg from "@/assets/images/login-page.svg";
 
 import HIWImgSup01 from "@/assets/images/h-i-w-sup-01.svg";
 import HIWImgSup02 from "@/assets/images/h-i-w-sup-02.svg";
@@ -59,9 +62,11 @@ export const IMAGES = {
   CarIcon,
   CalendarRoundIcon,
   UserIcon,
+  User02Icon,
   MailIcon,
   PhoneIcon,
   ChatIcon,
+  LockIcon,
 
   IPMockup,
   HIWImg01,
@@ -72,6 +77,7 @@ export const IMAGES = {
   FeatureImg03,
   DLetterImg,
   PhoneWithBg,
+  LoginImg,
 
   HIWImgSup01,
   HIWImgSup02,

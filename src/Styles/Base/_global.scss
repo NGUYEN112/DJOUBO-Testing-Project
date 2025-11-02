@@ -3,6 +3,7 @@
 @use "@/Styles/base/root" as *;
 html {
     font-family: $font-primary;
+    color: $text-primary-color;
 }
 
 body {

@@ -1,12 +1,16 @@
 {
   "questions": [
+  ],
+  "users": [
     {
-      "id": "14ed",
-      "userName": "Nguyen",
-      "email": "phannguyenhoainguyen@gmail.com",
-      "phoneNumber": "0395829393",
-      "message": "love you",
-      "createdAt": "2025-11-02T14:53:09.886Z"
+      "id": 1,
+      "username": "hoainguyen",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "jhocorp",
+      "password": "123456"
     }
   ]
 }
