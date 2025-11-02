@@ -41,12 +41,12 @@ export default function LoginPage() {
             if (!user) {
                 openPopup("Username is not exist")
                 // setError("username", { type: "manual", message: "Username is not exist" });
-                // return;
+                return;
             }
             if (user.password !== values.password) {
                 openPopup("Wrong password")
                 // setError("password", { type: "manual", message: "Wrong password" });
-                // return;
+                return;
             }
             login({ id: user.id, username: user.username });
             navigate("/driver-list");
