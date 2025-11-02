@@ -22,6 +22,9 @@
         p {
             color: $text-secondary-color;
         }
+        img {
+            width: 17.81rem;
+        }
     }
     &__about {
         li:nth-child(1) {
@@ -39,6 +42,9 @@
         & .downloadLinks {
             @include flexCenter(flex-start);
         }
+        & .downloadLinks img {
+            width: 7.5rem;
+        }
     }
     &__socialMedia {
         h3 {
@@ -46,6 +52,9 @@
         }
         & .socialLinks {
             @include flexCenter(flex-start);
+        }
+        & .socialLinks img {
+            width: 2rem;
         }
     }
 }

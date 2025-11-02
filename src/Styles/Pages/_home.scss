@@ -13,7 +13,7 @@
             position: absolute;
             top: 17px;
             left: 50%;
-            width: 85%;
+            width: 89%;
             transform: translateX(-50%);
             border-bottom: dashed 1px $color-medium-gray;
             z-index: -1;
@@ -30,7 +30,7 @@
     .ss2r1 {
         @include flexCenter(flex-start);
         position: relative;
-        margin-bottom: 10.8125rem;
+        margin-bottom: 11.1125rem;
     }
     &__intro {
         box-sizing: border-box;
@@ -58,6 +58,15 @@
         .infoExplan:not(:last-child) {
             margin-bottom: 11.125rem;
         }
+        .infoExplan:nth-child(1) .infoExplan__item picture:nth-child(2) {
+            width: 15.25rem;
+        }
+        .infoExplan:nth-child(2) .infoExplan__item picture:nth-child(2) {
+            width: 17.875rem;
+        }
+        .infoExplan:nth-child(3) .infoExplan__item picture:nth-child(2) {
+            width: 17.25rem;
+        }
         .infoExplan:nth-child(2) {
             .infoExplan__item picture:nth-child(2) {
                 left: -3rem;
@@ -70,6 +79,9 @@
             .infoExplan__item picture:nth-child(2) {
                 bottom: 3.7rem;
             }
+        }
+        .infoExplan .item-icon img {
+            width: 3.5rem;
         }
     }
     .ss2r3c1 {
@@ -94,6 +106,9 @@
     }
     .ss4-container {
         @include flexCenter(flex-start);
+        .ss4r1 img {
+            width: 41.75rem;
+        }
         .ss4r2 {
             @include flexCenter(flex-start);
         }
@@ -108,6 +123,7 @@
             color: $text-primary-color;
         }
         h4 img {
+            width: 11.9rem;
             height: 3rem;
             display: inline-block;
             vertical-align: middle;
@@ -117,6 +133,9 @@
         }
         .download-links {
             @include flexCenter(flex-start);
+        }
+        .download-links img {
+            width: 7.5rem;
         }
     }
 }

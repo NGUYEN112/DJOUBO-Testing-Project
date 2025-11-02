@@ -30,7 +30,7 @@ export default function CommonInput({
 
     return (
         <div className={`input-group radius-50 ${groupClassName}`}>
-            {iconImg ? <span className="mg-r-12"><img width={24} src={IMAGES[iconImg]} alt="icon" /></span> : ""}
+            {iconImg ? <span className="mg-r-12"><img src={IMAGES[iconImg]} alt="icon" /></span> : ""}
             {label ? <label htmlFor={name}>{label}</label> : null}
             {inputType !== "textarea" ?
                 (<><input id={name} className={inputClassName} type={inputType} placeholder={placeholder} {...register(name, rules)}/> {error && <p className="err">{error}</p>} </>) :

@@ -41,15 +41,15 @@ export default function HomePage() {
                         <div className="ss1r2c1 mg-b-47">
                             <div className="section__journey max-w600">
                                 <div className="journeyPoint">
-                                    <img src={journeyStep === 1 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" width={34} className="mg-b-12" />
+                                    <img src={journeyStep === 1 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" className="mg-b-12" />
                                     <p className="font-18 lh-24 font-w500 font-fm-se">Ou et quand?</p>
                                 </div>
                                 <div className="journeyPoint">
-                                    <img src={journeyStep === 2 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" width={34} className="mg-b-12" />
+                                    <img src={journeyStep === 2 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" className="mg-b-12" />
                                     <p className="font-18 lh-24 font-w500 font-fm-se">Personnalisation</p>
                                 </div>
                                 <div className="journeyPoint">
-                                    <img src={journeyStep === 3 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" width={34} className="mg-b-12" />
+                                    <img src={journeyStep === 3 ? IMAGES.MilesStoneActiveIcon : IMAGES.MilesStoneIcon} alt="icon milestone" className="mg-b-12" />
                                     <p className="font-18 lh-24 font-w500 font-fm-se">Valider</p>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
                 <div className="container ss4-container">
                     <div className="ss4r1 mg-r-70">
                         <picture>
-                            <img src={IMAGES.PhoneWithBg} width={668} alt="Djoubo" />
+                            <img src={IMAGES.PhoneWithBg} alt="Djoubo" />
                         </picture>
                     </div>
                     <div className="ss4r2">
@@ -115,7 +115,7 @@ export default function HomePage() {
                             <span className="font-14 lh-24 font-upper font-fm-se">plus d'opportunités</span>
                         </div>
                         <div className="section__downloadApp max-w600">
-                            <h4 className="font-48 lh-56 font-w500 mg-b-24"><span>Télécharge</span> notre application <img src={IMAGES.Logo} width={191}  alt="Djoubo Logo" /></h4>
+                            <h4 className="font-48 lh-56 font-w500 mg-b-24"><span>Télécharge</span> notre application <img src={IMAGES.Logo} alt="Djoubo Logo" /></h4>
                             <p className="font-18 lh-24 mg-b-32">Réservez votre trajet depuis l'aéroport vers la destination de votre choix avec Djoubo. Service rapide, confortable, et sécurisé</p>
                             <div className="download-links">
                                 <a className="mg-r-16" href=""><img src={IMAGES.AppStoreWhiteIcon} alt="App Store Icon" /></a>

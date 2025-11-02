@@ -2,13 +2,21 @@
 @use "@/Styles/abstracts/variables" as *;
 @use "@/Styles/base/root" as *;
 html {
+    @include breakpoints(
+    "font-size",
+    "",
+        (
+            1512: 1.058vw,
+            768: 2.083vw,
+            375: 4.26vw,
+        )
+    );
     font-family: $font-primary;
     color: $text-primary-color;
 }
 
 body {
     background-color: $color-bg-primary;
-    // padding: 0 8rem;
 }
 
 img {

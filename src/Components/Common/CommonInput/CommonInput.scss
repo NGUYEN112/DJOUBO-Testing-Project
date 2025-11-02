@@ -9,6 +9,10 @@
     box-shadow: 0 0 0 2px transparent;
     transition: box-shadow 0.2s ease;
 
+    span img {
+        width: 1.5rem;
+    }
+
     label {
         font-weight: 600;
         margin-right: 6px;

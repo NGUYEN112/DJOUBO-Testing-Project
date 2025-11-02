@@ -15,6 +15,11 @@
     .hd1r1 {
         @include flexCenter(space-between);
     }
+    &__logo {
+        img {
+            width: 15.6875rem;
+        }
+    }
     &__nav {
         @include flexCenter(flex-end);
     }
@@ -29,6 +34,9 @@
     }
     &__language {
         @include flexCenter(center);
+        img {
+            width: 1.5rem;
+        }
     }
     &__languageSelect {
         background-color: transparent;
@@ -39,4 +47,52 @@
             color: $text-primary-color;
         }
     }
+}
+
+.dropdown {
+  position: relative;
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    background: transparent;
+    border: none;
+    color: $text-primary-color;
+    
+    .dropdown__icon {
+      width: 5px;
+      height: 5px;
+      border-right: .1rem solid currentColor;
+      border-bottom: .1rem solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &.is-open .dropdown__icon {
+    transform: rotate(-135deg);
+  }
+
+  &__list {
+    width: 13.75rem;
+    position: absolute;
+    top: calc(100% + .5rem);
+    left: 0;
+    background: $color-bg-primary;
+    list-style: none;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+    li a {
+      display: block;
+      color: $text-primary-color;
+      text-decoration: none;
+      transition: background 0.25s;
+      text-align: center;
+      &:hover {
+        background: $text-primary-color;
+        color: $color-bg-primary;
+      }
+    }
+  }
 }

@@ -4,12 +4,15 @@
     .login-container {
         @include flexCenter(space-between);
     }
+    &__image {
+        width: 41.75rem;
+    }
     &__formInfo {
         .form__group {
             width: 31rem;
         }
         .form__group .input-group .mg-r-12 img{
-            height: 24px;
+            height: 1.5rem;
         }
         .forgot-password {
             color: $btn-bg-color;
