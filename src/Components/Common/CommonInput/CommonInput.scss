@@ -1,0 +1,27 @@
+
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/abstracts/variables" as *;
+@use "@/Styles/base/root" as *;
+
+.input-group {
+    @include flexCenter(flex-start);
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px transparent;
+    transition: box-shadow 0.2s ease;
+}
+
+label {
+    font-weight: 600;
+    margin-right: 6px;
+    color: $color-bg-secondary;
+}
+
+input {
+    border: none;
+    outline: none;
+    flex: 1;
+    color: $color-medium-light-gray;
+    background: transparent;
+    font-family: $font-secondary;
+}

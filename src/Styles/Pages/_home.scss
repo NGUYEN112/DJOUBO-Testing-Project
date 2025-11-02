@@ -1,5 +1,6 @@
 @use '../abstracts/mixins' as *;
 @use '../base/root' as *;
+@use '../abstracts/variables' as *;
 
 .section {
     &__journey {
@@ -7,11 +8,6 @@
         margin: 0 auto;
         position: relative;
         @include flexCenter(space-between);
-        img:last-child {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
         &::before {
             content: '';
             position: absolute;
@@ -23,7 +19,7 @@
             z-index: -1;
         }
         .journeyPoint {
-            @include flexCenter(center);
+            @include flexCenter(start);
             flex-direction: column;
             position: relative;
         }
@@ -31,64 +27,87 @@
             color: $text-primary-color;
         }     
     }
+    .ss2r1 {
+        @include flexCenter(center);
+        position: relative;
+        margin-bottom: 10.8125rem;
+    }
+    .ss2r1c1 {
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 7.5rem;
+        left: 1.9rem;
+        span {
+            color: $color-vivid-red;
+        }
+        &::after {
+            content: "";
+            width: 9.0625rem;
+            border-bottom: solid 1px $text-primary-color;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            transform: translateY(-50%);
+        }
+    }
+    &__intro {
+        box-sizing: border-box;
+        h3 {
+            color: $text-primary-color;
+        }
+        h3 span {
+            color: $text-secondary-color;
+        }
+        p {
+            color: $text-secondary-color;
+        }
+        p span {
+            color: $text-primary-color;
+        }
+    }
+    .ss2r2 {
+        margin-bottom: 13.9rem;
+    }
+    .ss2r2c2 {
+        .infoExplan:not(:last-child) {
+            margin-bottom: 11.125rem;
+        }
+        .infoExplan:nth-child(2) {
+            .infoExplan__item picture:nth-child(2) {
+                left: -3rem;
+                right: 0;
+                bottom: 0;
+                top: 4.3rem;
+            }
+        }
+        .infoExplan:nth-child(3) {
+            .infoExplan__item picture:nth-child(2) {
+                bottom: 3.7rem;
+            }
+        }
+    }
+    .ss2r3c1 {
+        margin-bottom: 9.5rem;
+    }
+    .ss2r3c2 {
+        .feature {
+            margin-bottom: 9.3125rem;
+        }
+        .feature:nth-child(even) {
+            justify-content: flex-end;
+        }
+        .feature:nth-child(even) .feature-img {
+            flex-direction: row-reverse;
+            left: -40.9rem;
+            right: 0;
+        }
+        .feature:nth-child(even) .feature-img picture:nth-child(2) {
+            margin-left: 0;
+            margin-right: -1.7rem;
+        }
+    }
 }
 
-.form {
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-    &__group {
-        @include flexCenter(space-between);
-        align-items: unset;
-    }
-    &__group.location {
-        flex-direction: column;
-        
-    }
-
-    .input-group {
-        @include flexCenter(flex-start);
-        background: #fff;
-        border-radius: 50px;
-        box-shadow: 0 0 0 2px transparent;
-        transition: box-shadow 0.2s ease;
-    }
-
-    label {
-        font-weight: 600;
-        margin-right: 6px;
-        color: $color-bg-secondary;
-    }
-
-    input {
-        border: none;
-        outline: none;
-        flex: 1;
-        color: $color-medium-light-gray;
-        background: transparent;
-    }
-
-    &__group.dateAndTime {
-        .input-group {
-            flex: 1 1 30%;
-            min-width: 0;
-        }
-        input {
-            flex: 1 1 30%;
-            min-width: 0;
-        }
-    }
-    &__group.pasenger {
-        .input-group {
-            flex: 1 1 50%;
-            min-width: 0;
-        }
-        input {
-            flex: 1 1 50%;
-            min-width: 0;
-        }
-    }
-    &__group.button-group {
-        justify-content: flex-end;
-    }
+.section#ss1 {
+    margin-bottom: 10.875rem;
 }

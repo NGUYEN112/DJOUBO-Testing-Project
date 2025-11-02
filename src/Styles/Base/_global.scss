@@ -2,14 +2,6 @@
 @use "@/Styles/abstracts/variables" as *;
 @use "@/Styles/base/root" as *;
 html {
-//     @include breakpoints(
-//         "font-size",
-//         "",
-//         (
-//             1920: 10px,
-//             768: 1.302vw,
-//         )
-//   );
     font-family: $font-primary;
 }
 
@@ -36,4 +28,8 @@ main {
     background: url("../../assets/images/pattern.svg") no-repeat; 
     background-size: 100% auto;
     background-position: top -4.375rem center;
+    max-width: 1512px;
+    margin: 0 auto;
 }
+
+

@@ -1,0 +1,31 @@
+{
+    "application": [
+        {
+            "id": 1, 
+            "imgConstaint": ["HIWImg01","HIWImgSup01"],
+            "imgAlt": ["Exclusivité aéroportuaire","Comment s'est passé votre trajet?"],
+            "icon": "FlightIcon",
+            "iconAlt": "icon airplane",
+            "title": "Exclusivité aéroportuaire",
+            "txt": "Contrairement à d'autres services de transport, notre application est spécifiquement conçue pour les trajets partant des aéroports. Ce focus nous permet de vous offrir un service parfaitement adapté à vos besoins après un vol."
+        },
+         {
+            "id": 2, 
+            "imgConstaint": ["HIWImg02","HIWImgSup02"],
+            "imgAlt": ["Personnalisation totale","Fiat · E-Ulysse"],
+            "icon": "CarIcon",
+            "iconAlt": "icon car",
+            "title": "Personnalisation totale",
+            "txt": "Choisissez le type de véhicule qui correspond à vos attentes, que vous voyagiez seul ou en groupe, avec peu ou beaucoup de bagages."
+        },
+        {
+            "id": 3, 
+            "imgConstaint": ["HIWImg03","HIWImgSup03"],
+            "imgAlt": ["Réservation à l'avance","14 octobre à 12h30 À payer Prise en charge 3 Boulevard des Capucines, 75002 Paris Destination 21 Rue de Rivoli, 75004 Paris"],
+            "icon": "CalendarRound",
+            "iconAlt": "icon calendar",
+            "title": "Réservation à l'avance",
+            "txt": "Planifiez votre trajet avant votre arrivée. En réservant à l'avance, vous êtes assuré qu'un chauffeur sera là pour vous accueillir dès que vous atterrissez. Plus de stress, seulement du confort et de la tranquillité."
+        }
+    ]
+}

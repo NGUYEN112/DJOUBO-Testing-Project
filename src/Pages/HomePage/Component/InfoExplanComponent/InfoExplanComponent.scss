@@ -1,0 +1,31 @@
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/base/root" as *;
+.infoExplan {
+    @include flexCenter(space-between);
+    &__item {
+        @include flexStart(flex-start);
+        position: relative;
+        flex-direction: column;
+        h4 {
+            color: $text-primary-color;
+        }
+        p {
+            color: $color-dim-gray;
+        }
+        picture:nth-child(2) {
+            position: absolute;
+            right: -2.5rem;
+            bottom: 3rem;
+        }
+    }
+    &__item.txt-right {
+        padding-left: 7.625rem;
+    }
+}
+
+.infoExplan.content-left {
+    flex-direction: row-reverse;
+    .infoExplan__item.txt-left {
+        padding-right: 7.625rem;
+    }
+}

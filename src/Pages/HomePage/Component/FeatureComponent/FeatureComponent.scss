@@ -1,0 +1,29 @@
+@use "@/Styles/base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+.feature {
+    background: linear-gradient(to right, $color-dark-gray 0%,$color-warm-black 50%, $color-dark-brown 100%);;
+    @include flexCenter(flex-start);
+    position: relative;
+    &__item {
+        .feature-info h4 {
+            color: $text-primary-color;
+        }
+        .feature-info p {
+            color: $color-dim-gray;
+        }
+    }
+    &__item.feature-img {
+        position: absolute;
+        @include flexCenter(center);
+        bottom: 0;
+        right: 3.9rem;
+        picture {
+            z-index: 2;
+        }
+        picture:nth-child(2) {
+            margin-left: -1.7rem;
+            margin-top: 6.4rem;
+            z-index: 1;
+        }
+    }
+}

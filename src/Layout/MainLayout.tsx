@@ -6,7 +6,7 @@ export default function MainLayout() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pad-x-80">
         <Outlet />
       </main>
       <Footer />

@@ -1,6 +1,6 @@
-@use "./abstracts/variables";
-@use "./abstracts/mixins";
-@use "./Base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+@use "@/Styles/abstracts/variables" as *;
+@use "@/Styles/base/root" as *;
 
 .section#ss1 {
     h1 {
@@ -11,5 +11,21 @@
         /* for Firefox */
         background-clip: text;
         color: transparent;
+    }
+}
+
+.gradient-to-bot {
+    background: linear-gradient(to bottom, $text-primary-color 0%,$color-light-gray 70%, $color-warm-gray 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form {
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    &__group {
+        @include flexCenter(space-between);
+        align-items: unset;
     }
 }
