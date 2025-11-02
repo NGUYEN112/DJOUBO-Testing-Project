@@ -1,0 +1,43 @@
+@use "@/Styles/base/root" as *;
+@use "@/Styles/abstracts/mixins" as *;
+
+.questionForm {
+    background: url("../../../assets/images/email-form-bg.svg") no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    
+    .container {
+        @include flexCenter(space-between);
+    }
+    &__title {
+        @include flexStart(flex-start);
+        margin-left: -3.875rem;
+        & > span {
+            margin: 0rem 2.1rem 0 3.8rem;
+        }
+        & > span::after {
+            height: 2.6rem;
+            top: -2.5rem;
+            bottom: 0;
+        }
+        h3 {
+            color: $text-primary-color;
+        }
+        h3 span {
+            color: $color-dim-gray;
+        }
+    }
+    &__form {
+        margin: 0;
+        .form__group {
+            width: 31rem;
+        }
+        .form__group.textarea .input-group {
+            align-items: flex-start;
+            border-radius: 25px;
+        }
+        .form__group.textarea textarea {
+            height: 6.75rem;
+        }
+    }
+}

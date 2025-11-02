@@ -28,30 +28,16 @@
         }     
     }
     .ss2r1 {
-        @include flexCenter(center);
+        @include flexCenter(flex-start);
         position: relative;
         margin-bottom: 10.8125rem;
     }
-    .ss2r1c1 {
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 7.5rem;
-        left: 1.9rem;
-        span {
-            color: $color-vivid-red;
-        }
-        &::after {
-            content: "";
-            width: 9.0625rem;
-            border-bottom: solid 1px $text-primary-color;
-            position: absolute;
-            top: 50%;
-            right: 100%;
-            transform: translateY(-50%);
-        }
-    }
     &__intro {
         box-sizing: border-box;
+        @include flexStart(flex-start);
+        .sideText::after {
+            height: 9.0625rem;
+        }
         h3 {
             color: $text-primary-color;
         }
@@ -90,7 +76,7 @@
         margin-bottom: 9.5rem;
     }
     .ss2r3c2 {
-        .feature {
+        .feature:not(:last-child) {
             margin-bottom: 9.3125rem;
         }
         .feature:nth-child(even) {
@@ -106,8 +92,44 @@
             margin-right: -1.7rem;
         }
     }
+    .ss4-container {
+        @include flexCenter(flex-start);
+        .ss4r2 {
+            @include flexCenter(flex-start);
+        }
+        .sideText::after {
+            height: 4.8rem;
+            top: -3.6rem;
+        }
+    }
+    &__downloadApp {
+        max-width: 556px;
+        h4 {
+            color: $text-primary-color;
+        }
+        h4 img {
+            height: 3rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        p {
+            color: $color-dim-gray;
+        }
+        .download-links {
+            @include flexCenter(flex-start);
+        }
+    }
 }
 
 .section#ss1 {
     margin-bottom: 10.875rem;
 }
+.section#ss2 {
+    margin-bottom: 11.125rem;
+}
+.section#ss3 {
+    margin-bottom: 11.125rem;
+}
+
+
+

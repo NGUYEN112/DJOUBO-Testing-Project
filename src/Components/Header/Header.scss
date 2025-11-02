@@ -8,6 +8,10 @@
     left: 0;
     z-index: 99;
     width: 100%;
+    &--scrolled {
+        background-color: $color-bg-primary;
+        border-bottom: solid 1px $color-dim-gray;
+    }
     .hd1r1 {
         @include flexCenter(space-between);
     }

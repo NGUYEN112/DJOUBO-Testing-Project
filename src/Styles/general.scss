@@ -15,17 +15,37 @@
 }
 
 .gradient-to-bot {
-    background: linear-gradient(to bottom, $text-primary-color 0%,$color-light-gray 70%, $color-warm-gray 100%);
+    background: linear-gradient(to bottom, $text-primary-color 0%, $color-light-gray 70%, $color-warm-gray 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .form {
-    margin: 0 auto;
     box-sizing: border-box;
-    
+
     &__group {
         @include flexCenter(space-between);
         align-items: unset;
     }
 }
+
+.sideText {
+    color: $color-vivid-red;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    position: relative;
+    white-space: nowrap;
+
+    &::after {
+        content: "";
+        border-left: solid 1px $text-primary-color;
+        position: absolute;
+        bottom: 0.4rem;
+        right: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.err { color: $color-vivid-red; font-size: 1rem; margin-top: 4px; }
+.error { border-color: $color-vivid-red; }

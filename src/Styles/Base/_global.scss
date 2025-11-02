@@ -13,10 +13,15 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 a {
     text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
 }
 
 li {
@@ -31,5 +36,10 @@ main {
     max-width: 1512px;
     margin: 0 auto;
 }
+
+textarea {
+    border: none;
+}
+
 
 

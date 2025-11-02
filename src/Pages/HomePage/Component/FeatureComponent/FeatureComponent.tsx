@@ -37,11 +37,11 @@ export default function InfoExplanComponent() {
     const [fearues] = useState<Feature[]>(defautInfo);
     return (
         <>
-            {fearues.map((feature,index) => (
-                <div className="feature pad-x-100 pad-y-86 radius-25">
+            {fearues.map((feature) => (
+                <div key={feature.id} className="feature pad-x-100 pad-y-86 radius-25">
                     <div className="feature__item max-w500">
                         <div className="feature-info">
-                            <h4 className="font-32 lh-32 font-w600 mg-b-22">{feature.title}</h4>
+                            <h4 className="font-32 lh-32 font-w600 mg-b-25">{feature.title}</h4>
                             <p className="font-18 lh-24">{feature.txt}</p>
                         </div>
                     </div>

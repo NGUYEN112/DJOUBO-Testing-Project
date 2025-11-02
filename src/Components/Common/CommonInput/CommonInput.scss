@@ -6,7 +6,6 @@
 .input-group {
     @include flexCenter(flex-start);
     background: #fff;
-    border-radius: 50px;
     box-shadow: 0 0 0 2px transparent;
     transition: box-shadow 0.2s ease;
 }

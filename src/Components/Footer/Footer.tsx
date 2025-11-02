@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer" id="ft1">
             <div className="container ft1-container pad-t-56 pad-x-80">
-                <div className="ft1r1 mg-b-56">
+                <div className="ft1r1 mg-b-39">
                     <div className="ft1r1c1 footer__logo max-w285">
                         <img src={IMAGES.Logo} alt="DJOUBO Logo" width={285} className="mg-b-30"/>
                         <p className="font-16 lh-24">Réservez votre trajet depuis l'aéroport vers la destination de votre choix avec Djoubo. Service rapide, confortable,et sécurisé</p>

@@ -1,28 +1,41 @@
-import "./CommonInput.scss";
+import type { UseFormRegister , RegisterOptions } from "react-hook-form";
 import { IMAGES, type ImageKey } from "../../../Constants/images";
+import "./CommonInput.scss";
 
 interface CommonInputProps {
-  groupClassName?: string;
-  inputClassName?: string; 
-  inputType:string;
-  iconImg?:ImageKey;
-  label?:string;
-  placehoder?: string;
+    name: string
+    groupClassName?: string;
+    inputClassName?: string;
+    inputType: "text" | "number" | "email" | "textarea" | "date" | "time";
+    iconImg?: ImageKey;
+    label?: string;
+    placeholder?: string;
+    register: UseFormRegister<any>;
+    rules?: RegisterOptions;
+    error?:string
 }
 
 export default function CommonInput({
+    name,
     groupClassName = "",
     inputClassName = "",
     inputType,
     iconImg,
     label,
-    placehoder=""
+    placeholder = "",
+    register,
+    rules,
+    error
 }: CommonInputProps) {
-    return(
+
+    return (
         <div className={`input-group radius-50 ${groupClassName}`}>
-            {iconImg ? <span className="mg-r-12"><img width={24} src={IMAGES[iconImg]} alt="icon" /></span> : "" }
-            {label ? <label>{label}</label> : null}
-            <input className={inputClassName} type={inputType} placeholder={placehoder} />
+            {iconImg ? <span className="mg-r-12"><img width={24} src={IMAGES[iconImg]} alt="icon" /></span> : ""}
+            {label ? <label htmlFor={name}>{label}</label> : null}
+            {inputType !== "textarea" ?
+                (<><input id={name} className={inputClassName} type={inputType} placeholder={placeholder} {...register(name, rules)}/> {error && <p className="err">{error}</p>} </>) :
+                (<><textarea id={name} className={inputClassName} placeholder={placeholder} {...register(name, rules)}></textarea> {error && <p className="err">{error}</p>} </>)
+            }
         </div>
     )
 }
